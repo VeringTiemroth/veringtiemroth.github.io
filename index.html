@@ -219,7 +219,28 @@
 						</header>
 						<form method="post" action="#" class="cta">
 							<div class="row gtr-uniform gtr-50">
-								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
+								<div class="col-8 col-12-xsmall">
+								<form method="post" action="https://formspree.io/tiemroth@outlook.com">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="4"></textarea>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+								<input type="hidden" name="_next" value="https://veringtiemroth.github.io/thanks" />
+							</form>
+								
+								
+								</div>
 								<div class="col-4 col-12-xsmall"><input type="submit" value="Get Started" class="fit primary" /></div>
 							</div>
 						</form>
