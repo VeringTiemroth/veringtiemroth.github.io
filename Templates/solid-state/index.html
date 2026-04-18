@@ -50,21 +50,24 @@
 			.tech-stack { font-size: 0.8em; opacity: 0.55; margin-top: 0.9em; line-height: 1.65; }
 			.earlier-career { opacity: 0.78; }
 			.earlier-career p { font-size: 0.9em; margin-bottom: 0.9em; }
-			.glance-strip {
-				display: flex;
-				gap: 0;
-				margin: 0.5em 0 1.2em;
+
+			/* ── Role info table — used on all experience entries ── */
+			.role-table {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 0.6em 0 1.2em;
 				border: 1px solid rgba(255,255,255,0.1);
 				border-radius: 4px;
 				overflow: hidden;
 			}
-			.glance-item {
-				flex: 1;
+			.role-table td {
 				padding: 8px 14px;
 				border-right: 1px solid rgba(255,255,255,0.1);
+				vertical-align: top;
+				width: 33.33%;
 			}
-			.glance-item:last-child { border-right: none; }
-			.glance-label {
+			.role-table td:last-child { border-right: none; }
+			.role-table .rt-label {
 				font-size: 0.58em;
 				text-transform: uppercase;
 				letter-spacing: 0.08em;
@@ -72,7 +75,12 @@
 				display: block;
 				margin-bottom: 3px;
 			}
-			.glance-value { font-size: 0.78em; font-weight: 600; }
+			.role-table .rt-value {
+				font-size: 0.82em;
+				font-weight: 600;
+				display: block;
+			}
+
 			.comp-grid {
 				display: grid;
 				grid-template-columns: 1fr 1fr 1fr;
@@ -98,9 +106,9 @@
 			}
 			@media (max-width: 600px) {
 				.comp-grid { grid-template-columns: 1fr; }
-				.glance-strip { flex-direction: column; }
-				.glance-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
-				.glance-item:last-child { border-bottom: none; }
+				.role-table, .role-table tbody, .role-table tr, .role-table td { display: block; width: 100%; }
+				.role-table td { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
+				.role-table td:last-child { border-bottom: none; }
 			}
 		</style>
 	</head>
@@ -205,20 +213,13 @@
 							<p class="role-meta">IT Director (2021–Present) &middot; IT Manager (2018–2021) &middot; IT Specialist (2016–2018) &middot; October 2016 – Present</p>
 							<p class="role-intro">Progressed from IT Specialist to IT Director, leading IT operations, infrastructure, cloud, and security for a global SaaS vendor in Identity Governance.</p>
 
-							<div class="glance-strip">
-								<div class="glance-item">
-									<span class="glance-label">Team</span>
-									<span class="glance-value">4 people &middot; CPH + Alicante</span>
-								</div>
-								<div class="glance-item">
-									<span class="glance-label">Budget</span>
-									<span class="glance-value">IT budget owner &middot; finance reporting</span>
-								</div>
-								<div class="glance-item">
-									<span class="glance-label">NSAT</span>
-									<span class="glance-value">98%+ yearly</span>
-								</div>
-							</div>
+							<table class="role-table">
+								<tr>
+									<td><span class="rt-label">Team</span><span class="rt-value">4 people &middot; CPH + Alicante</span></td>
+									<td><span class="rt-label">Budget</span><span class="rt-value">IT budget owner &middot; finance reporting</span></td>
+									<td><span class="rt-label">NSAT</span><span class="rt-value">98%+ yearly</span></td>
+								</tr>
+							</table>
 
 							<ul style="font-size:0.9em; line-height:1.8; padding-left:1.2em;">
 								<li>Led the transition from hybrid infrastructure to a cloud-first operating model on Microsoft Azure.</li>
@@ -239,6 +240,15 @@
 							<h3 style="margin-bottom:0.1em;">Cryptomathic</h3>
 							<p class="role-meta">IT Operations / Infrastructure &middot; January 2015 – September 2016</p>
 							<p class="role-intro">Managed IT operations and support for the Aarhus HQ and satellite offices in Cambridge, Munich, and San Jose.</p>
+
+							<table class="role-table">
+								<tr>
+									<td><span class="rt-label">Location</span><span class="rt-value">Aarhus HQ + Cambridge, Munich, San Jose</span></td>
+									<td><span class="rt-label">Focus</span><span class="rt-value">IT operations &middot; infrastructure &middot; migrations</span></td>
+									<td><span class="rt-label">Scope</span><span class="rt-value">Multi-office, international</span></td>
+								</tr>
+							</table>
+
 							<ul style="font-size:0.9em; line-height:1.8; padding-left:1.2em;">
 								<li>Led migration from on-premises Exchange to Microsoft 365.</li>
 								<li>Oversaw implementation of new infrastructure, including Hyper-V hosts and SAN storage.</li>
@@ -253,6 +263,15 @@
 							<h3 style="margin-bottom:0.1em;">Systematic</h3>
 							<p class="role-meta">Infrastructure Support Consultant &middot; August 2013 – December 2014</p>
 							<p class="role-intro">Supported the IT infrastructure for the Admiral Danish Fleet in a high-security environment near Marselisborg, Aarhus.</p>
+
+							<table class="role-table">
+								<tr>
+									<td><span class="rt-label">Environment</span><span class="rt-value">High-security &middot; Danish Navy</span></td>
+									<td><span class="rt-label">Clearance</span><span class="rt-value">Active Danish security clearance</span></td>
+									<td><span class="rt-label">Focus</span><span class="rt-value">Mission-critical infrastructure support</span></td>
+								</tr>
+							</table>
+
 							<ul style="font-size:0.9em; line-height:1.8; padding-left:1.2em;">
 								<li>Supported two of the fleet's most mission-critical systems.</li>
 								<li>Contributed to the full reconstruction of the IT infrastructure on HDMS Esbern Snare.</li>
