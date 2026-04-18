@@ -20,11 +20,28 @@
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
-
 			gtag('config', 'UA-131584473-1');
 		</script>
 
-
+		<style>
+			.current-badge {
+				display: inline-block;
+				font-size: 0.62em;
+				font-weight: 700;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				background: #4acaa8;
+				color: #1a1a1a;
+				border-radius: 3px;
+				padding: 2px 8px;
+				vertical-align: middle;
+				margin-left: 10px;
+				position: relative;
+				top: -2px;
+			}
+			.earlier-career { opacity: 0.85; }
+			.earlier-career p { font-size: 0.92em; margin-bottom: 1em; }
+		</style>
 	</head>
 	<body class="landing is-preload">
 
@@ -37,9 +54,11 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="#one">Profile</a></li>
-							<li><a href="#two">Competencies</a></li>
 							<li><a href="#three">Experience</a></li>
+							<li><a href="#two">Competencies</a></li>
 							<li><a href="#four">Contact</a></li>
+							<li><a href="https://linkedin.com/in/kennethtiemroth" target="_blank" class="icon fa-linkedin" style="font-size: 1.1em; padding: 0 0.5em;"><span class="label">LinkedIn</span></a></li>
+							<li><a href="assets/cv/Kenneth_Tiemroth_CV.pdf" target="_blank" class="button primary small">Download CV</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -54,10 +73,14 @@
 						</header>
 						<span class="image"><img src="images/kti_2023_square.jpg" alt="Kenneth Tiemroth" /></span>
 					</div>
+					<ul class="actions special" style="margin-top: 1.5em; margin-bottom: 2em;">
+						<li><a href="assets/cv/Kenneth_Tiemroth_CV.pdf" target="_blank" class="button primary icon fa-download">Download CV</a></li>
+						<li><a href="https://linkedin.com/in/kennethtiemroth" target="_blank" class="button icon fa-linkedin">LinkedIn Profile</a></li>
+					</ul>
 					<a href="#one" class="goto-next scrolly">Next</a>
 				</section>
 				
-				<!-- One -->
+				<!-- One — Profile -->
 				<section id="one" class="spotlight style1 bottom">
 					<span class="image fit main"><img src="images/banner.jpg" alt="" /></span>
 					<div class="content">
@@ -101,10 +124,74 @@
 							</div>
 						</div>
 					</div>
-					<a href="#two" class="goto-next scrolly">Next</a>
+					<a href="#three" class="goto-next scrolly">Next</a>
 				</section>
 
-				<!-- Two -->
+				<!-- Three — Experience (moved before Competencies) -->
+				<section id="three" class="wrapper style1 special fade-up">
+					<div class="container">
+						<header class="major">
+							<h2>PROFESSIONAL EXPERIENCE</h2>
+							<p>Selected roles and responsibilities.</p>
+						</header>
+						<div class="box alt" style="text-align: left;">
+
+							<section class="col-12">
+								<span class="image left"><img src="images/omada.png" alt="Omada" /></span>
+								<p><b>Omada | October 2016 - Present</b> <span class="current-badge">Current role</span><br>
+								<i>IT Director (2021 - Present) &middot; IT Manager (2018 - 2021) &middot; IT Specialist (2016 - 2018)</i><br>
+								Progressed from IT Specialist to IT Director, now leading IT operations, infrastructure, cloud, and security for a global SaaS vendor in Identity Governance.</p>
+								<p><i>Team: 4 people (Copenhagen &amp; Alicante) &nbsp;&bull;&nbsp; Budget responsible &middot; consistently delivered within budget &nbsp;&bull;&nbsp; Scope: global, distributed</i></p>
+								&bull; Led the transition from hybrid infrastructure to a cloud-first operating model on Microsoft Azure.<br>
+								&bull; Drove infrastructure modernisation, including Hyper-V platform improvements and scalability initiatives.<br>
+								&bull; Implemented key security and identity controls: Conditional Access, MFA, Intune Security Baselines, Azure AD / Entra ID, and Omada Identity Cloud.<br>
+								&bull; Owned IT controls across five ISO/IEC 27001 recertifications and three SOC 2 Type II audits &mdash; with zero critical findings.<br>
+								&bull; Hands-on contributor to annual penetration testing programme, coordinating remediation and reporting in close cooperation with CISO in support of ISO 27001 and SOC 2 compliance cycles.<br>
+								&bull; Restructured the internal helpdesk, achieving yearly NSAT scores above 98%.<br>
+								&bull; Rolled out a global SASE platform with Cato Networks to provide secure, optimised access for users across locations.<br>
+								&bull; Led and coordinated a distributed 4-person IT team across Copenhagen and Alicante.
+								<p><br><b>Tech Stack:</b> Microsoft Azure, Hyper-V, Azure AD / Entra ID, Microsoft Intune, Conditional Access, MFA, Omada Identity Cloud, Cato Networks, Windows Server, PowerShell, SASE, ISO/IEC 27001, SOC 2 Type II</p>
+							</section><hr />
+							
+							<section class="col-12">
+								<span class="image right"><img src="images/cryptomathic.png" alt="Cryptomathic" /></span>
+								<p><b>Cryptomathic | IT Operations / Infrastructure | January 2015 - September 2016</b><br>
+								Managed IT operations and support for the Aarhus HQ and satellite offices in Cambridge, Munich, and San Jose.<br><br>
+								&bull; Led migration from on-premises Exchange to Microsoft 365.<br>
+								&bull; Oversaw implementation of new infrastructure, including Hyper-V hosts and SAN storage.<br>
+								&bull; Rebuilt the test environment on VMware.<br>
+								&bull; Rolled out a Meraki MX-based VPN solution to strengthen secure connectivity across offices.</p>
+								<p><b>Tech Stack:</b> Microsoft 365, Hyper-V, VMware, SAN Storage, Meraki MX, Windows Server, Active Directory, DNS, DHCP</p>
+							</section><hr />
+							
+							<section class="col-12">
+								<span class="image left"><img src="images/systematic.png" alt="Systematic" /></span>
+								<p><b>Systematic | Infrastructure Support Consultant | August 2013 - December 2014</b><br>
+								Supported the IT infrastructure for the Admiral Danish Fleet in a high-security environment near Marselisborg, Aarhus.<br><br>
+								&bull; Supported two of the fleet's most mission-critical systems.<br>
+								&bull; Contributed to the full reconstruction of the IT infrastructure on HDMS Esbern Snare.<br>
+								&bull; Worked in an environment requiring active Danish security clearance.</p>
+								<p><b>Tech Stack:</b> Windows Server, VMware, Cisco networking, Secure VPN, Backup and Recovery Systems, ITIL-based processes</p>
+							</section><hr />
+
+							<!-- Earlier Career: Plougmann Vingtoft + T-Systems condensed into one block -->
+							<section class="col-12 earlier-career">
+								<header><h3 style="font-size: 1em; margin-bottom: 0.6em; opacity: 0.7; text-transform: uppercase; letter-spacing: 0.05em;">Earlier Career</h3></header>
+								<p>
+									<b>Plougmann Vingtoft</b> &nbsp;&bull;&nbsp; IT Support / Infrastructure &nbsp;&bull;&nbsp; Dec 2006 – Jul 2013<br>
+									Responsible for helpdesk, user administration, and infrastructure maintenance across day-to-day IT operations. Improved internal processes and contributed to infrastructure roadmap initiatives.
+								</p>
+								<p>
+									<b>T-Systems / Jensen Consulting</b> &nbsp;&bull;&nbsp; Installation Consultant &nbsp;&bull;&nbsp; Jan 1999 – Nov 2006<br>
+									Long-term client engagements in IT operations, rollout, training, and end-user enablement. Key clients included Maersk Logistics, DSB S-tog, Ferring Pharmaceuticals, and Nokia Danmark.
+								</p>
+							</section>
+
+						</div>
+					</div>
+				</section>
+
+				<!-- Two — Competencies (moved after Experience) -->
 				<section id="two" class="wrapper style1 special fade-up">
 					<div class="container">
 						<header class="major">
@@ -142,75 +229,7 @@
 					</div>
 				</section>
 				
-				<!-- Three -->
-				<section id="three" class="wrapper style1 special fade-up">
-					<div class="container">
-						<header class="major">
-							<h2>PROFESSIONAL EXPERIENCE</h2>
-							<p>Selected roles and responsibilities.</p>
-						</header>
-						<div class="box alt" style="text-align: left;">
-							<section class="col-12">
-								<span class="image left"><img src="images/omada.png" alt="Omada" /></span>
-								<p><b>Omada | October 2016 - Present</b><br>
-								<i>IT Director (2021 - Present) &middot; IT Manager (2018 - 2021) &middot; IT Specialist (2016 - 2018)</i><br>
-								Progressed from IT Specialist to IT Director, now leading IT operations, infrastructure, cloud, and security for a global SaaS vendor in Identity Governance.</p><br><br>
-								&bull; Led the transition from hybrid infrastructure to a cloud-first operating model on Microsoft Azure.<br>
-								&bull; Drove infrastructure modernisation, including Hyper-V platform improvements and scalability initiatives.<br>
-								&bull; Implemented key security and identity controls: Conditional Access, MFA, Intune Security Baselines, Azure AD / Entra ID, and Omada Identity Cloud.<br>
-								&bull; Owned IT controls across five ISO/IEC 27001 recertifications and three SOC 2 Type II audits &mdash; with zero critical findings.<br>
-								&bull; Hands-on contributor to annual penetration testing programme, coordinating remediation and reporting in close cooperation with CISO in support of ISO 27001 and SOC 2 compliance cycles.<br>
-								&bull; Restructured the internal helpdesk, achieving yearly NSAT scores above 98%.<br>
-								&bull; Rolled out a global SASE platform with Cato Networks to provide secure, optimised access for users across locations.<br>
-								&bull; Led and coordinated a distributed 4-person IT team across Copenhagen and Alicante.
-								<p><br><b>Tech Stack:</b> Microsoft Azure, Hyper-V, Azure AD / Entra ID, Microsoft Intune, Conditional Access, MFA, Omada Identity Cloud, Cato Networks, Windows Server, PowerShell, SASE, ISO/IEC 27001, SOC 2 Type II</p>
-							</section><hr />
-							
-							<section class="col-12">
-								<span class="image right"><img src="images/cryptomathic.png" alt="Cryptomathic" /></span>
-								<p><b>Cryptomathic | IT Operations / Infrastructure | January 2015 - September 2016</b><br>
-								Managed IT operations and support for the Aarhus HQ and satellite offices in Cambridge, Munich, and San Jose.<br><br>
-								&bull; Led migration from on-premises Exchange to Microsoft 365.<br>
-								&bull; Oversaw implementation of new infrastructure, including Hyper-V hosts and SAN storage.<br>
-								&bull; Rebuilt the test environment on VMware.<br>
-								&bull; Rolled out a Meraki MX-based VPN solution to strengthen secure connectivity across offices.</p>
-								<p><b>Tech Stack:</b> Microsoft 365, Hyper-V, VMware, SAN Storage, Meraki MX, Windows Server, Active Directory, DNS, DHCP</p>
-							</section><hr />
-							
-							<section class="col-12">
-								<span class="image left"><img src="images/systematic.png" alt="Systematic" /></span>
-								<p><b>Systematic | Infrastructure Support Consultant | August 2013 - December 2014</b><br>
-								Supported the IT infrastructure for the Admiral Danish Fleet in a high-security environment near Marselisborg, Aarhus.<br><br>
-								&bull; Supported two of the fleet's most mission-critical systems.<br>
-								&bull; Contributed to the full reconstruction of the IT infrastructure on HDMS Esbern Snare.<br>
-								&bull; Worked in an environment requiring active Danish security clearance.</p>
-								<p><b>Tech Stack:</b> Windows Server, VMware, Cisco networking, Secure VPN, Backup and Recovery Systems, ITIL-based processes</p>
-							</section><hr />
-							
-							<section class="col-12">
-								<span class="image right"><img src="images/pv.png" alt="Plougmann Vingtoft" /></span>
-								<p><b>Plougmann Vingtoft | IT Support / Infrastructure | December 2006 - July 2013</b><br>
-								Supported day-to-day IT operations with responsibility across helpdesk, user administration, and infrastructure maintenance.<br><br>
-								&bull; Maintained and supported virtual infrastructure.<br>
-								&bull; Improved internal IT processes and business-facing documentation.<br>
-								&bull; Contributed to infrastructure planning and execution of roadmap initiatives.</p>
-								<p><b>Tech Stack:</b> VMware, Microsoft Exchange, Windows Server, Helpdesk Systems, Active Directory, IT documentation tools</p>
-							</section><hr />
-							
-							<section class="col-12">
-								<span class="image left"><img src="images/ts.png" alt="T-Systems" /></span>
-								<p><b>T-Systems / Jensen Consulting | Installation Consultant | January 1999 - November 2006</b><br>
-								<i>Consulting assignments delivered across multiple long-term client engagements.</i><br>
-								Delivered consultancy services with a focus on support, operations, rollout, maintenance, and end-user enablement.<br><br>
-								&bull; Long-term assignments supporting IT operations, installation, training, and maintenance.<br>
-								&bull; Key clients included Maersk Logistics, DSB S-tog, Ferring Pharmaceuticals, and Nokia Danmark.</p>
-								<p><b>Core Areas:</b> IT support, IT operations, deployment, training, maintenance</p>
-							</section>
-						</div>
-					</div>
-				</section>
-				
-				<!-- Four -->
+				<!-- Four — Contact -->
 				<section id="four" class="wrapper style2 special fade">
 					<div class="container">
 						<header>
@@ -229,6 +248,7 @@
 							<input type="hidden" name="next" value="https://veringtiemroth.dk/thanks" />
 							<ul class="actions special">
 								<li><button type="submit" class="primary">Send</button></li>
+								<li><a href="assets/cv/Kenneth_Tiemroth_CV.pdf" class="button icon fa-download" target="_blank">Download CV (PDF)</a></li>
 							</ul>
 						</form>
 					</div>
